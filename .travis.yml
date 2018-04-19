@@ -1,0 +1,9 @@
+language: c
+install: make dep
+compiler:
+  - clang
+  - gcc
+
+before_install: sudo apt-get install check
+script: make && make test
+sudo: required
